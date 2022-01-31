@@ -1,0 +1,15 @@
+{
+    "number_of_nodes": 196,
+    "number_of_edges": 694,
+    "average_degree": 3.5408163265306123,
+    "average_clustering": 0.18509040275664432,
+    "diameter": 9,
+    "radius": 5,
+    "barycenter": [
+        "Sofiane"
+    ],
+    "average_shortest_path": 3.1650444793301937,
+    "transitivity": 0.17525652985074627,
+    "density": 0.036316064887493456,
+    "average_distance_to_barycenter": 2.0918367346938775
+}
