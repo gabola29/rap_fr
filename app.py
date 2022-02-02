@@ -14,7 +14,7 @@ st.set_page_config(
 st.title("Analyse des rappeurs français :")
 
 st.write("Cette application, vise à avoir une vue globale de l'écosystème des rappeurs français.")
-st.write("Premièrement, au niveau du nombre de morceaux etd'albums, mais ensuite en ce qui concerne leurs collaboration.")
+st.write("Premièrement, au niveau du nombre de morceaux et d'albums, mais ensuite en ce qui concerne leurs collaborations.")
 st.write("Enfin, nous analyserons les lyrics.")
 st.write("Même si la majorité des rappeurs français, sont présents dans cette base de donnée; certains sont manquants.")
 st.write("De même, il manque les données de certains morceaux. En ce qui concerne les lyrics, l'analyse se fait sur un "
