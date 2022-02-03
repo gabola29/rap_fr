@@ -1,6 +1,5 @@
-name: app_rap_fr
+name: rap_fr
 channels:
-  - anaconda
   - conda-forge
   - defaults
 dependencies:
