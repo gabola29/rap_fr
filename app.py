@@ -53,7 +53,7 @@ def query_a_single_rapper(rapper_name):
 @st.cache
 def load_network_indiv():
 
-    return pd.read_csv(".data/network_indiv_metrics.csv", sep=',', encoding='utf8')
+    return pd.read_csv("./data/network_indiv_metrics.csv", sep=',', encoding='utf8')
 
 
 @st.cache
@@ -160,7 +160,7 @@ st.write("Cette représentation du réseau, a été effectué avec l'algorithme 
 st.write("Le graph (comme les prochains) est inétractif ! Vous pouvez zoomer à l'intérieur et vous déplacer "
          "comme vous le souhaitez.")
 
-fig = plotly.io.read_json(".data/network_atlas_version_finale.json")
+fig = plotly.io.read_json("./data/network_atlas_version_finale.json")
 
 st.plotly_chart(fig, use_container_width=True)
 
@@ -171,7 +171,7 @@ st.write("Contrairement à ce que l'on aurait pu imaginer, on ne distingue pas �
          "collaborations entre rappeurs (par exemple des traits plus ou moins marqués en fonction du nombre de "
          "collaborations).")
 
-with open(".data/overall_metrics.json", encoding='utf-8') as fh:
+with open("./data/overall_metrics.json", encoding='utf-8') as fh:
     infos = json.load(fh)
 
 st.write("voici quelques statistiques sur ce réseau :")
@@ -193,7 +193,7 @@ st.write("Le chemin moyen le plus court est de : ", round(infos['average_shortes
 df = load_network_indiv()
 
 # on load la distance du barycentre
-with open(".data/distance_barycenter.json", encoding='utf-8') as fh:
+with open("./data/distance_barycenter.json", encoding='utf-8') as fh:
     dist_bary = json.load(fh)
 
 # on fait une liste des rappeurs présents pour
